@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: "猴子也能做遊戲"
 subtitle:
 description:
-author: John Doe
+author: "猴子團隊"
 language:
 timezone:
 
@@ -72,10 +72,52 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: material-flow
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
   repo: https://github.com/NotOnlyMonkeys/NotOnlyMonkeys.github.io.git
+
+# Generator json content
+jsonContent:
+  meta: false
+  keywords: false
+  pages:
+    title: true
+    slug: false
+    date: false
+    updated: false
+    comments: false
+    path: false
+    link: false
+    permalink: true
+    excerpt: false
+    keywords: false
+    text: true
+    raw: false
+    content: false
+  posts:
+    title: true
+    slug: false
+    date: false
+    updated: false
+    comments: false
+    path: false
+    link: false
+    permalink: true
+    excerpt: false
+    keywords: false
+    text: true
+    raw: false
+    content: false
+    categories: false
+    tags: false
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
